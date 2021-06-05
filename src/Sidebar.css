@@ -1,0 +1,97 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    flex: 0.25;
+    height: 100vh;
+    background-color: #2f3135; 
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+.sidebar__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2f3135;
+    color: white;
+    border-bottom: 3px solid #26282c;
+}
+
+.chatHeader__search {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    width: 90%;
+    margin-top: 10px;
+}
+
+.chatHeader__search input {
+    padding-bottom: 4px;
+}
+
+/* .chatHeader__search input:focus {
+    border-bottom: 1px solid gray;
+    border-color: gray;
+} */
+
+.chatHeader__search input {
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+.sidebar__channels {
+    flex: 1;
+    overflow: auto;
+    margin-top: 10px;
+}
+
+.sidebar__addChannel {
+    cursor: pointer;
+}
+
+.sidebar__addChannel:hover {
+    color: white;
+}
+
+.sidebar__channelsHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #2f3135;
+    color: gray;
+}
+
+.sidebar__header {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar__profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+    background-color: #2f3135;
+    padding: 10px;
+    border-top: 1px solid gray;
+}
+
+.sidebar__profileInfo {
+    flex: 1;
+    padding: 10px;
+}
+
+.sidebar__profileInfo> h3 {
+    color: white;
+}
+
+.sidebar__profileIcons> .MuiSvgIcon-root {
+    padding: 10px;
+}

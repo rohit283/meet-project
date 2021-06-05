@@ -1,0 +1,11 @@
+.right__sidebar {
+    display: flex;
+    flex-direction: column;
+    flex: 0.25;
+    background-color: #2f3135;
+    height: 100vh;
+}
+
+.right__sidebar::-webkit-scrollbar {
+    display: none;
+}

@@ -1,0 +1,39 @@
+
+
+
+.videoHomeScr div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.videoHomeScr div p {
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+.videoHomeScr div input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 10px;
+    border-bottom: 1px solid rgb(50, 50, 255);
+    color: black;
+    margin-right: 10px;
+}
+
+.videoHomeScr div button {
+    border: none;
+    outline: none;
+    background-color: rgb(50, 50, 255);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
