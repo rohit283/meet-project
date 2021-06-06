@@ -9,7 +9,8 @@ var xss = require("xss")
 var server = http.createServer(app)
 var io = require('socket.io')(server, {
     cors: {
-      Access-Control-Allow-Origin: https://channel-meeting.herokuapp.com/,
+      origin: "https://channel-meeting.herokuapp.com",
+      credentials: true,
     }
 })
 
