@@ -7,11 +7,7 @@ const path = require("path")
 var xss = require("xss")
 
 var server = http.createServer(app)
-var io = require('socket.io')(server, {
-    cors: {
-      credentials: true,
-    }
-})
+var io = require('socket.io')(server)
 
 app.use(cors())
 app.use(bodyParser.json())
