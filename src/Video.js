@@ -21,7 +21,7 @@ import Modal from 'react-bootstrap/Modal'
 import './bootstrap.css'
 import "./Video.css"
 
-const server_url = process.env.NODE_ENV === 'production' ? 'https://channel-meeting.herokuapp.com/' : "http://localhost:4001"
+const server_url = process.env.NODE_ENV === 'production' ? 'https://eager-davinci-4764fa.netlify.app' : "http://localhost:4001"
 
 var connections = {}
 const peerConnectionConfig = {
@@ -289,7 +289,7 @@ class Video extends Component {
 	}
 
 	connectToSocketServer = () => {
-		socket = io.connect(server_url, { secure: true, reconnection: true, rejectUnauthorized: false })
+		socket = io.connect(server_url, { secure: true})
 		// const socket = io.connect("https://my.website.com:3002", { secure: true, reconnection: true, rejectUnauthorized: false });
 
 
@@ -550,9 +550,7 @@ class Video extends Component {
 								</IconButton>
 							</Badge>
 
-							<IconButton style={{ color: "#424242" }} >
-								<BorderColorIcon onClick={this.openAttend}/>
-							</IconButton>
+							
 
 							<IconButton variant="contained" style={{ color: "#424242" }} >
 								{/* <BorderColorIcon > */}
