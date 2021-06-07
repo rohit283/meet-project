@@ -21,7 +21,7 @@ import Modal from 'react-bootstrap/Modal'
 import './bootstrap.css'
 import "./Video.css"
 
-const server_url = "http://localhost:4001"
+const server_url = process.env.NODE_ENV === 'production' ? 'eager-davinci-4764fa.netlify.app' : "http://localhost:4001"
 
 var connections = {}
 const peerConnectionConfig = {
