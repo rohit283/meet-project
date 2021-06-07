@@ -7,7 +7,13 @@ const path = require("path")
 var xss = require("xss")
 
 var server = http.createServer(app)
-var io = require('socket.io')(server)
+var io = require('socket.io')(server, {
+  cors: {
+    origin: "https://eager-davinci-4764fa.netlify.app",
+    methods: ["GET", "POST"],
+    credentials: true,
+  },
+})
 
 app.use(cors())
 app.use(bodyParser.json())
