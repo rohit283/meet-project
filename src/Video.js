@@ -289,7 +289,7 @@ class Video extends Component {
 	}
 
 	connectToSocketServer = () => {
-		socket = io.connect(server_url, { secure: true,transports: ['websocket', 'flashsocket', 'htmlfile', 'xhr-polling', 'polling'],})
+		socket = io.connect(server_url, { secure: true,transports: ['xhr-polling', 'polling'],})
 		// const socket = io.connect("https://my.website.com:3002", { secure: true, reconnection: true, rejectUnauthorized: false });
 
 
