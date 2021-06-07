@@ -20,7 +20,7 @@ import { Row } from 'reactstrap'
 import Modal from 'react-bootstrap/Modal'
 import './bootstrap.css'
 import "./Video.css"
-<script src="https://cdn.socket.io/socket.io-3.0.0.js"></script>
+
 const server_url = process.env.NODE_ENV === 'production' ? 'https://eager-davinci-4764fa.netlify.app' : "http://localhost:4001"
 
 var connections = {}
